@@ -11,7 +11,12 @@
 
 	# <HINT>
 
-	# What was the name of the function we have seen which changes the case of a string?  Use your CLI to access the Python documentation and get help(str).
+	# What was the name of the function we have seen which changes the case of a string?  
+	# Use your CLI to access the Python documentation and get help(str).
     
 def endsPy(input):
-	return False
+	input_lower = input.lower()
+	if input_lower.endswith('py'):
+		return True
+	else:
+		return False 
